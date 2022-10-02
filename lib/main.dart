@@ -36,56 +36,56 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  padding: EdgeInsets.symmetric(vertical:10, horizontal:10),
+                SizedBox(
+                  width: 150,
+                  child: Divider(
+                    color: Colors.white70,
+                    thickness: 3
+                )
+                ),
+                Card(
                   margin: EdgeInsets.symmetric(vertical:15, horizontal:30),
                     child:
-                    Row(
-                      children: <Widget>[
+                    ListTile(
+                      leading:
                         Icon(
                           Icons.phone,
                           color: Colors.teal,
                         ),
-                        SizedBox(
-                          width: 15
-                        ),
+                        title:
                         Text(
                             '+ 614 363 0555',
                           style: TextStyle(
                             color: Colors.teal,
                             letterSpacing: 1.5,
                           ),
-                        )
-                      ],
+                        ),
+                      hoverColor: Colors.grey,
                     ),
 
                 ),
-                Container(
-                    color: Colors.white,
-                    padding: EdgeInsets.symmetric(vertical:10, horizontal:10),
+                Card(
                     margin: EdgeInsets.symmetric(vertical:15, horizontal:30),
                     child:
-                    Row(
-                      children: <Widget>[
+                    ListTile(
+                      leading:
                         Icon(
                             Icons.email,
                             color: Colors.teal
                         ),
-                        SizedBox(
-                          width: 15,
-                        ),
+                       title:
                         Text(
                           'tang627@purdue.edu',
                           style: TextStyle(
                             color: Colors.teal,
                             letterSpacing: 1.5,
                           ),
-                        )
-                      ],
+                        ),
+                      hoverColor: Colors.grey,
                     )
                 )
               ],
+              mainAxisAlignment: MainAxisAlignment.center,
             )
         ),
       ),
