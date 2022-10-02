@@ -35,6 +35,55 @@ class MyApp extends StatelessWidget {
                     color: Colors.white70,
                     fontWeight: FontWeight.bold
                   ),
+                ),
+                Container(
+                  color: Colors.white,
+                  padding: EdgeInsets.symmetric(vertical:10, horizontal:10),
+                  margin: EdgeInsets.symmetric(vertical:15, horizontal:30),
+                    child:
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.phone,
+                          color: Colors.teal,
+                        ),
+                        SizedBox(
+                          width: 15
+                        ),
+                        Text(
+                            '+ 614 363 0555',
+                          style: TextStyle(
+                            color: Colors.teal,
+                            letterSpacing: 1.5,
+                          ),
+                        )
+                      ],
+                    ),
+
+                ),
+                Container(
+                    color: Colors.white,
+                    padding: EdgeInsets.symmetric(vertical:10, horizontal:10),
+                    margin: EdgeInsets.symmetric(vertical:15, horizontal:30),
+                    child:
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                            Icons.email,
+                            color: Colors.teal
+                        ),
+                        SizedBox(
+                          width: 15,
+                        ),
+                        Text(
+                          'tang627@purdue.edu',
+                          style: TextStyle(
+                            color: Colors.teal,
+                            letterSpacing: 1.5,
+                          ),
+                        )
+                      ],
+                    )
                 )
               ],
             )
